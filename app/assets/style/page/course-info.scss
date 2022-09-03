@@ -1,0 +1,245 @@
+.course-info {
+    .top {
+        padding-left: 12%;
+        margin-right: 5%;
+
+        img {
+            width: 100px;
+            border-radius: 100%;
+        }
+
+        .left {
+            max-width: 746px;
+            padding: 0 12px;
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3.color {
+                font-size: 16px;
+                color: $primary;
+            }
+        }
+
+        .part {
+            background-color: #2D2D2D;
+            border-radius: 24px;
+
+            ul {
+                padding-left: 12px;
+            }
+
+            li {
+                position: relative;
+            }
+
+            li:before {
+                position: absolute;
+                content: '';
+                width: 5px;
+                height: 5px;
+                left: -12px;
+                top: 30%;
+                background-color: $primary;
+            }
+        }
+
+        .introduct-top {
+            span {
+                color: $primary;
+            }
+
+            h3 {
+                font-size: 16px;
+                margin-bottom: 0px;
+                color: $gray-500;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .top-space {
+            border-top: 1px solid white;
+        }
+
+        .introduct {
+            padding: 32px;
+        }
+
+        .content-h3 {
+            font-size: 18px;
+            border-left: 4px solid $primary;
+        }
+    }
+
+    .right {
+
+
+        ul {
+            width: 416px;
+            padding: 40px 32px;
+            background-color: #2D2D2D;
+            border: 1px solid white;
+            position: relative;
+        }
+
+        li {
+            border-bottom: 1px $gray-600 solid;
+        }
+
+        li:last-child {
+            border-bottom: 0px;
+        }
+
+        li:hover {
+
+            h2,
+            p {
+                color: $primary;
+            }
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        a {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(to top, $primary, $secondary);
+            border-radius: 100%;
+        }
+
+        .point-1 {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            top: -5px;
+            left: -5px;
+        }
+
+        .point-2 {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+
+        .point-3 {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            bottom: -5px;
+            left: -5px;
+        }
+
+        .point-4 {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .top {
+            flex-direction: column;
+            padding: 0 12px;
+            margin: 0;
+
+            aside {
+                margin: auto !important;
+            }
+
+            .right {
+                width: 95%;
+
+                ul {
+                    width: 100%;
+                }
+            }
+
+            .person {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .lg-mt-16 {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    .bottom {
+        background-color: black;
+
+        .h2-line {
+            position: relative;
+        }
+
+        .h2-line:after {
+            content: '';
+            width: 50px;
+            height: 2px;
+            background-color: $primary;
+            position: absolute;
+            top: 50px;
+            right: 48%;
+        }
+    }
+
+    .hot {
+        img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        ul {
+            gap: 24px;
+        }
+
+        li {
+            background-color: #2D2D2D;
+            border-radius: 24px;
+            position: relative;
+        }
+
+        li:after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            bottom: 80px;
+            left: 0px;
+        }
+
+        li:hover {
+            outline: 1px solid $primary;
+        }
+
+        h3 {
+            min-height: 58px;
+            font-size: 20px;
+        }
+
+        h4 {
+            color: $primary;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+---
+title: 課程報名
+layout: ./app/layout.ejs
+engine: ejs
+current: apply
+---
+
+<section class="apply text-white position-relative bg-black">
+    <div class="bg-light-color pt-4 pb-3 progress-line">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-9 col-md-7 timeline">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-md-5">
+                    <div class="timeline-pointer text-center step-1 active">
+                        <p>課程報名</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="timeline-pointer text-center step-2">
+                        <p>信用卡付款</p>
+                    </div>
+                </div>
+                <div class="col-3 col-md-5">
+                    <div class="timeline-pointer text-center step-3">
+                        <p>付款成功</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="px-4 py-5 info position-absolute d-flex flex-column align-items-center">
+        <img src="./assets/images/teacher01.jpg" alt="" class="mb-4">
+        <h2 class="mb-1">2022 Python 全攻略｜從入門到實務</h2>
+        <h3 class="mb-2">前端語言</h3>
+        <p>帶領無基礎、文組生、對網頁設計有興趣的人，進入網站工程領域的基礎課，將從最基礎的 HTML 語法出發。</p>
+    </section>
+    <section class="content">
+        <div class="apply-container bg-dark-color">
+            <h2 class="fs-4 text-center mb-5">課程報名</h2>
+            <h3 class="fs-5">選擇付款方式</h3>
+            <ul class="d-flex ps-0">
+                <li class="px-4 py-3">信用卡付款</li>
+                <li class="px-4 py-3">超商繳款</li>
+                <li class="px-4 py-3">ATM轉帳</li>
+                <li class="px-4 py-3">12期分期付款</li>
+            </ul>
+            <h3 class="fs-5 my-4">訂單資訊</h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="name" class="d-flex flex-column mb-1">姓名</label>
+                    <input type="text" id="name" class="w-100 mb-3 px-3 py-2" placeholder="請輸入姓名">
+                </div>
+                <div class="col-lg-6">
+                    <label for="tel" class="d-flex flex-column mb-1">電話</label>
+                    <input type="tel" id="tel" class="w-100 mb-3 px-3 py-2" placeholder="請輸入電話號碼">
+                </div>
+                <div class="col-12">
+                    <label for="Email" class="d-flex flex-column mb-1">Email</label>
+                    <input type="text" id="Email" class="w-100 mb-3 px-3 py-2" placeholder="請輸入Email">
+                </div>
+                <div class="col-lg-6">
+                    <label for="course" class="d-flex flex-column mb-1">課程</label>
+                    <select name="" id="course" class="w-100 mb-3 px-3 py-2">
+                        <option value="">10堂50分鐘</option>
+                    </select>
+                </div>
+                <div class="col-lg-6">
+                    <label for="date" class="d-flex flex-column mb-1">想預約的日期</label>
+                    <input type="date" id="date" class="w-100 mb-3 px-3 py-2">
+                </div>
+                <div class="col-12">
+                    <label for="location" class="d-flex flex-column mb-1">上課地點</label>
+                    <input type="text" id="location" class="w-100 px-3 py-2" placeholder="請輸入上課地點">
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-4 btm">
+                <p class="mb-0">NT$1600</p>
+                <a href="./pay.html" class="rainbow">所有課程列表</a>
+            </div>
+        </div>
+    </section>
+</section>
